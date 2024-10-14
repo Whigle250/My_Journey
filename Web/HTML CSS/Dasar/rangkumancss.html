@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="rangkumanhtml">
+    <meta name="keyword" content="HTML,CSS,JAVASCRIPT">
+    <meta name="author" content="Bryan Valentino Poernomo">
+    <link rel="stylesheet" href="rangkumancss.css">
+    <title>Rangkuman Dasar HTML</title>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <header class="pembuka1">Pembuka menggunakan header</header>
+    <table border="2" class="pembuka">
+        <tr>
+            <td>
+                <ol>
+                    <li><a href="#bagian1">Bagian 1</a></li>
+                    <li><a href="#bagian2">Bagian 2</a></li>
+                    <li><a href="#bagian3">Bagian 3</a></li>
+                    <li><a href="#bagian4"></a></li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <h3>Pengenalan</h3>
+    <p class="pertama" id="bagian1">Ini adalah paragraf "p", ini adalah awalan pelajaran saya mengenai HTMl CSS dan Javascript, saya ingin
+        menguasai html,css,js,python, dan c++ pada usia muda, cita-cita saya adalah menjadi AI Engineer. Semoga saya beruntung 
+        dan sekian terimakasih
+    </p>
+    <h1>Header 1-6</h1>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <br><br><br><br> <!--Membuat baris baru-->
+
+    <h3 id="bagian2">Gambar Dan Link</h3>
+    <img src="gambar.jpg" alt="Plis jangan error" width="25%" height="200" title="Gambar orang sukses">
+    <!--List di HTML-->
+    <ol id="ol1">
+        <li>Ordered list 1</li>
+        <li>Ordered list 2</li>
+        <li>Ordered list 3</li>
+    </ol>
+    <ul id="ul1">
+        <li>UnOrdered list 1</li>
+        <li>UnOrdered list 2</li>
+        <li>UnOrdered list 3</li>
+    </ul>
+    <a href="https://www.youtube.com" target="_blank">
+        <img src="yt.jpeg" alt="Yt" widht="25" height="50">
+    </a>
+    <br>
+    <a href="https://www.youtube.com/@sandhikagalihWPU" target ="_blank">Belajar di sandhika galih dulu yuk</a>
+
+    <br><br><br><br>
+
+    <h3 id="bagian3">Tabel</h3>
+    <p>Simple Table</p>
+    <table border="1" cellspacing="0" cellpadding="20">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+    </table>
+
+    <p>Advance Table</p>
+    <table border="1" cellspacing="0" cellpadding="20">
+        <thead>
+            <th></th>
+            <th>Kolom 1</th>
+            <th>Kolom 2</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Baris 1</th>
+                <td>1,1</td>
+                <td>1,2</td>
+            </tr>
+            <tr>
+                <th>Baris 2</th>
+                <td>2,1</td>
+                <td>2,2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Table Merging (Pake Simple Table)</p>
+    <table border="1" cellspacing="0" cellpadding="20">
+        <tr>
+            <td rowspan="3">1,1</td>
+            <td colspan="2" style="text-align: center;">1,2</td>
+            
+        </tr>
+        <tr>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+
+    <p>The Ultimate Table Merging</p>
+    <table border="1" cellspacing="0" cellpadding="20">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+            <td>1,5</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="3" rowspan="3" style="text-align: center;">2,2</td>
+            <td>2,5</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,5</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,5</td>
+        </tr>
+        <tr>
+            <td>5,1</td>
+            <td>5,2</td>
+            <td>5,3</td>
+            <td>5,4</td>
+            <td>5,5</td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <h3 id="bagian4">Form</h3>
+    <form>
+    <label for="username">Nama:</label>
+    <input type="text" id="username">
+    <br>
+    <label for="pass">Password:</label>
+    <input type="password">
+    <br>
+    <input type="radio" id="pria" name="gender"><label for="pria">Pria</label>
+    <input type="radio" id="wanita" name="gender"><label for="wanita">Wanita</label>
+    <br>
+    <input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
+    <input type="checkbox" id="futsal"><label for="futsal">Futsal</label>
+    <input type="checkbox" id="badminton"><label for="badminton">Badminton</label>
+    <input type="checkbox" id="maingitar"><label for="maingitar">Main Gitar</label>
+    <br>
+    <label for="textarea">Kesan dan Pesan anda</label>
+    <textarea name="Isi..." id="textarea"></textarea>
+    <br>
+    <select name="selectdah" id="gada">
+        <option value="">Lombok</option>
+        <option value="">Sumbawa</option>
+        <option value="">Bima</option>
+    </select>
+    <br>
+    <button type="submit">Submit</button>
+    </form>
+    <br><br><br><br>
+
+    <p>Tabel + Form anjayy</p>
+    <table>
+        <tr>
+            <td style="text-align: right;"><label for="nama">Nama :</label></td>
+            <td><input type="text" id="nama"></td>
+        </tr>
+        <tr>
+            <td><label for="pass">Password :</label></td>
+            <td><input type="password" id="pass"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <label for="radio1">Pria</label>
+                <input type="radio" id="radio1" name="gender1">
+                <label for="radio2">Wanita</label>
+                <input type="radio" id="radio2" name="gender1">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="ngoding2"><label for="ngoding2">Ngoding</label>
+                <input type="checkbox" id="Membaca2"><label for="Membaca2">Membaca</label>
+                <input type="checkbox" id="futsal2"><label for="futsal2">Futsal</label>
+                <input type="checkbox" id="gitar2"><label for="gitar2">Gitar</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <label for="text1">Textare:</label><textarea name="isiaja" id="text1"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <select name="adasd" id="gada">
+                    <option value="lmbk">Lombok</option>
+                    <option value="asfa">Bandung</option>
+                    <option value="fa">Surabaya</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button>Submit</button>
+            </td>
+        </tr>
+    </table>
+    <footer class="penutup">Penutup menggunakan footer</footer>
+</body>
+</html>

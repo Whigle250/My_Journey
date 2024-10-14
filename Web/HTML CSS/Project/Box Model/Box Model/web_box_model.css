@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Style*/
+body{
+	background-image: url(pexels-pixabay-220182.jpg);
+	font: 16px/28px arial,sans-serif;
+	color: #333;
+}
+
+.box{
+	width: 800px;
+	background-color: #eaeaea;
+	margin: auto;
+}
+
+.header .judul{
+	font-size: 40px;
+	padding: 10px;
+	padding-top: 15px;
+}
+
+.header ul li{
+	display: inline-block;
+	margin: -5px 10px 0px 1px;
+	
+	padding: 10px;
+}
+
+.header ul li a{
+	text-decoration: none;
+	color: salmon;
+}
+
+.header ul li a:hover{
+	color: blue;
+	background-color: lightblue;
+}
+
+.gambar{
+	height: 350px;
+	background-image: url(pexels-life-of-pix-7974.jpg);
+	background-size: cover;
+	background-position: 0 -100px;
+	border-top: salmon solid 4px;
+	border-bottom: lightskyblue solid 4px;
+}
+
+.isi h2{
+	margin: 10px;
+	margin-bottom: 5px;
+	font-size: 28px;
+}
+
+.isi .pencipta{
+	margin: -12px 0 10px 12px;
+	font-size: 10px;
+}
+
+.isi .pencipta a{
+	text-decoration: none;
+	color: salmon;
+}
+
+.isi p{
+	margin: 15px;
+	font-size: 14px;
+	word-spacing: 2px;
+}
+
+.footer{
+	background-color: #333;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}

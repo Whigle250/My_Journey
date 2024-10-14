@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'source_sans_prolight';
+    src:url('sourcesanspro-light-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+/*Style*/
+body{
+    font: 18px/28px 'source_sans_prolight',arial,sans-serif;
+    background-color: #ddd;
+    height: 1000px;
+}
+
+h1{
+    font-size: 50px;
+    margin: 30px 0;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0,0,0,.5);
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.7);
+    position: relative;
+}
+
+.gallery li{
+    /* overflow: hidden; */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    border: 5px solid black;
+}
+
+.gallery li a img{
+    border-radius: 50%;
+}
+
+.gallery li span{
+    font-size: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background-color: rgba(200,200,200,.7);
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 120px;
+    color: black;
+    transform: scale(0) rotate(0);
+    opacity: 0;
+    transition: .3s;
+}
+
+.gallery li a:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear{
+    clear: both;
+}
+
+/* Overlay */
+.overlay{
+    width: 0;
+    height: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: 1s;
+    text-align: center;
+    padding: 100px;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
+}
+
+.overlay img{
+    max-height: 100%;
+    box-shadow: 0 0 7px 10px rgba(0,0,0,.5);
+    opacity: 0;
+}
+
+.overlay:target img{
+    animation: gambar 1s forwards;
+}
+
+.overlay .close{
+    opacity: 0;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 65px;
+    left: 61%;
+    border: 2px black solid;
+    padding: 5px;
+    background-color: red;
+}
+
+.overlay:target .close{
+    animation: close .3s .7s forwards;
+}
+
+.overlay .next{
+    font-size: 150px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 250px;
+    right: 370px;
+    opacity: 0;
+}
+
+.overlay .previous{
+    font-size: 150px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 370px;
+    opacity: 0;
+}
+
+.overlay:target .next{
+    animation: gambar 1s forwards;
+}
+
+.overlay:target .previous{
+    animation: gambar 1s forwards;
+}
+
+@keyframes gambar{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes close{
+    0%{
+        top: 60px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        top: 70px;
+    }
+}
